@@ -25,6 +25,7 @@ def enviar_mensagem_direta(ip, porta, mensagem):
         print(f"Erro ao enviar mensagem: {e}")
 
 def main():
+    # Trocar Host IP para Ip do servidor 
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     client.connect(("127.0.0.1", 9999))
 
